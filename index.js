@@ -26,3 +26,10 @@ var getTime = function() {
   },
 
   interval = setInterval(getTime, 3000);
+
+//OR
+
+var interval = setInterval(function() {
+    console.log(new Date().getTime());
+  },
+  3000)
