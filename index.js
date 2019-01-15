@@ -21,6 +21,7 @@ date.getMilliseconds()
 
 //setInterval(function(){ alert("Hello"); }, 3000);//
 
+
 var getTime = function() {
     console.log(new Date().getTime());
   },
@@ -29,7 +30,29 @@ var getTime = function() {
 
 //OR
 
+
 var interval = setInterval(function() {
     console.log(new Date().getTime());
+  },
+  3000)
+
+
+//Another example of interval//
+/*setInterval: Same as setTimeout(), but repeats
+the execution of the function continuously.*/
+
+var x = 1;
+var interval = setInterval(function() {
+    if (x === 3) {
+      clearInterval(interval);
+    }
+    console.log("This is an interval # " + x++);
+  },
+  1000)
+
+//setTimeout: Executes a function, after waiting a specified number of milliseconds.
+var x = 1;
+setTimeout = setTimeout(function() {
+    console.log("This interval will be displayed after 3000 miliseconds. Only once.");
   },
   3000)
