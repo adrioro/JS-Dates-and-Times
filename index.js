@@ -1,3 +1,5 @@
+//NOTE: Based on the local time of the user's computer.//
+
 var date = new Date(); // Tue Jan 15 2019 11:53:39 GMT-0500 (Eastern Standard Time)"
 
 date.getTime()
