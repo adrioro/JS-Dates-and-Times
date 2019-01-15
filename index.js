@@ -16,3 +16,13 @@ date.getMinutes()
 
 date.getMilliseconds()
 //514
+
+//INTERVALS//
+
+//setInterval(function(){ alert("Hello"); }, 3000);//
+
+var getTime = function() {
+    console.log(new Date().getTime());
+  },
+
+  interval = setInterval(getTime, 3000);
